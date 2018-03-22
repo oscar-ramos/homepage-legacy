@@ -1,0 +1,12 @@
+@article{ramos2013advanced,
+  title   = {An advanced robotics motion generation framework for inferring the
+                  organisation of human movements},
+  author  = {Ramos, Oscar E and Mansard, Nicolas and Stasse, Olivier and
+                  Sou{\`e}res, P},
+  journal = {Computer methods in biomechanics and biomedical engineering},
+  volume  = {16},
+  number  = {1},
+  pages   = {177--178},
+  year    = {2013},
+  month   = {September},
+}

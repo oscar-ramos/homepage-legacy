@@ -1,0 +1,11 @@
+@inproceedings{ramos2014whole,
+  title     = {Whole-body Motion Integrating the Capture Point in the
+                  Operational Space Inverse Dynamics Control},
+  author    = {Ramos, Oscar E and Mansard, Nicolas and Sou{\`e}res, Philippe},
+  booktitle = {IEEE-RAS International Conference on Humanoid Robots
+                  (Humanoids)},
+  pages     = {707--712},                  
+  year      = {2014},
+  month     = {November},
+  address   = {Madrid, Spain},
+}

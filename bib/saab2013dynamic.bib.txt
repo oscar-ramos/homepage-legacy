@@ -1,0 +1,12 @@
+@article{saab2013dynamic,
+  title   = {Dynamic whole-body motion generation under rigid contacts and
+                  other unilateral constraints},
+  author  = {Saab, Layale and Ramos, Oscar E and Keith, Fran{\c{c}}ois and
+                  Mansard, Nicolas and Sou{\`e}res, Philippe and Fourquet, J},
+  journal = {IEEE Transactions on Robotics},
+  volume = {29},
+  number = {2},
+  pages  = {346--362},
+  month  = {April},
+  year   = {2013},
+}

@@ -1,0 +1,12 @@
+@inproceedings{ramos2012walking,
+  title     = {Walking on non-planar surfaces using an inverse dynamic stack of
+                  tasks},
+  author    = {Ramos, Oscar E and Mansard, Nicolas and Stasse, Olivier and
+                  Sou{\`e}res, Philippe},
+  booktitle = {IEEE-RAS International Conference on Humanoid Robots
+                  (Humanoids)},
+  pages     = {829--834},
+  year      = {2012},
+  month     = {November},
+  address   = {Osaka, Japan},
+}
