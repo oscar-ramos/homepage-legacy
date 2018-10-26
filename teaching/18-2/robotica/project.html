@@ -52,86 +52,70 @@
 
 	<h2 id="course-description">Proyecto</h2>
         
-        En construcción ...
+        <!-- Prueba de entrada (temporal) <br/> -->
 
-        <!-- The two proposed projects are the following: -->
-
-        <!-- <ol> -->
-        <!--   <li> <h4> Autonomous Grasping of Objects based on Visual -->
-        <!--       Information </h4> -->
-            
-        <!--     <p> -->
-        <!--       For this project the Sawyer robot will be used in its -->
-        <!--       position-controlled mode, as well as one or two cameras. All the -->
-        <!--       project will be implemented using ROS and Open CV for obtaining -->
-        <!--       adequate information from the camera(s). The position and -->
-        <!--       orientation of the end-effector will be controlled using any -->
-        <!--       method of choice, which can be inverse kinematics, differential -->
-        <!--       kinematics, inverse dynamics, etc.  <p /> -->
-
-        <!--     <p> There must be one or two cameras fixed in the environment, -->
-        <!--       which will be used to detect the object and which can also be -->
-        <!--       used to provide a finer feedback for grasping (visual -->
-        <!--       servoing). The system must be trained to recognize at least three -->
-        <!--       different objects (e.g. cups, bottles). These objects will be -->
-        <!--       randomly positioned on a table. The user will only specify which -->
-        <!--       object the robot must grasp, but neither the position nor the -->
-        <!--       orientation of the object will be specified. The robot must be -->
-        <!--       able to recognize the object, grasp it, and move it to another -->
-        <!--       predefined location. -->
-        <!--     </p> -->
-
-        <!--   <li> <h4> Autonomous Motion of a Mobile Robot </h4> -->
-
-        <!--     <p> -->
-        <!--       For this project the Kobuki differential mobile robot will be -->
-        <!--       used. The Kobuki robots in the lab are currently controlled with -->
-        <!--       another proprietary board, but for this project a microcomputer -->
-        <!--       such as a Raspberry Pi will be used, instead, to control the -->
-        <!--       mobile robot. This needs some additional wiring to provide energy -->
-        <!--       to the microcomputer using the outputs of the -->
-        <!--       Kobuki. Alternatively, any other mobile robot can be used as long -->
-        <!--       as the motors are velocity controlled. -->
-        <!--     </p> -->
-
-        <!--     <p> -->
-        <!--       There must be one or two cameras fixed at the top of the -->
-        <!--       environment in order to provide an estimation of the map where -->
-        <!--       the robot will move. Random obstacles will be located in the -->
-        <!--       environment. The robot will be left somewhere on the environment, -->
-        <!--       and the user will specify the point the robot should move to but -->
-        <!--       not the path that it will follow. The robot should autonomously -->
-        <!--       find the path and move in the environment without colliding with -->
-        <!--       objects. It is desired, but not mandatory, to provide the system -->
-        <!--       with the ability to reconfigure itself even in a dynamic -->
-        <!--       environment (when the obstacles change their position). -->
-        <!--     </p> -->
-
-        <!-- </ol> -->
-
-        <!-- <p> -->
-        <!-- If you are interested in doing another project, you can also propose it -->
-        <!-- during the lab session, and its feasibility will be discussed. -->
-        <!-- </p> -->
-
-        <!-- <p> -->
-        <!--   The deadline for the project presentation is on July 7 at 10 am. The -->
-        <!--   demo and the presentation will be at that time. The grade of the -->
-        <!--   project will have the following components: -->
-        <!--   <ul> -->
-        <!--     <li> (20%) Oral presentation of the project -->
-        <!--     <li> (30%) A paper (4 to 6 pages) in IEEE format (written in MS -->
-        <!--       Word or LaTeX) but submitted in pdf format. -->
-        <!--     <li> (20%) A video showing the results of the project -->
-        <!--     <li> (30%) The demo of the project -->
-        <!--   </ul> -->
-        <!--   The paper should follow the format of a conference paper: -->
-        <!--   introduction, methodology, results, conclusions. Note that you do not -->
-        <!--   need to have a specific methodology section, but it can be split into -->
-        <!--   other sections with specific names, in case it is needed. -->
-        <!-- </p> -->
-
+        El proyecto final se realizará en grupos de 2 alumnos. Para el
+        proyecto final se utilizará un robot móvil diferencial (Kobuki) y un
+        sensor Kinect, conectados a través de un Raspberry Pi 3 y corriendo ROS
+        Kinetic. Se puede utilizar tanto la cámara RGB como la cámara de
+        profundidad del Kinect, e incluso se puede añadir sensores o actuadores
+        en caso de ser necesario.<br />
         
+        <h4> Tareas que el robot debe ser capaz de realizar </h4>
+
+        <ol>
+          <!-- <li> -->
+          <!--   El robot debe dejarse en un pequeño ambiente cerrado (por ejemplo, -->
+          <!--   en una parte acondicionada del laboratorio) y debe ser capaz de -->
+          <!--   explorar dicho ambiente de forma autónoma, generando un mapa 2D del -->
+          <!--   mismo. Luego, el usuario debe indicarle a dónde ir en el mapa, y el -->
+          <!--   robot debe ir sin obtener comandos específicos del usuario. -->
+          <li>
+          El robot debe ser colocado en una esquina de un espacio confinado
+          (como, por ejemplo, el laboratorio), y debe poder desplazarse
+          autónomamente hasta puntos arbitrarios indicados por el usuario de
+          manera interactiva, sin ser guiado manualmente por una persona. Dicho
+          espacio confinado debe contener obstáculos en su interior. El robot
+          debe además evitar chocar con obstáculos del entorno mientras se
+          desplaza.
+
+          <li>
+          Se debe indicar un objeto al robot, y el robot debe buscar
+          autónomamente dicho objeto dentro del espacio que conoce. Es decir,
+          el robot debe explorar hasta encontrar el objeto. Una vez que el
+          objeto ha sido encontrado, el robot debe dar alguna indicación de que
+          el objeto se ha encontrado (por ejemplo, se puede usar algún paquete
+          de síntesis de voz como sound_play o algún otro).
+         
+        <!-- <p /> -->
+        </ol>
+        
+        Algunas funcionalidades adicionales, planteadas por cada grupo, otorgan
+        también puntaje. Por ejemplo, se puede brindar capacidades adicionales
+        de autonomía como comandos de voz, mapas en 3D, etc.
+
+        <h4> Evaluación </h4>
+
+        <p>
+          La nota del proyecto contendrá los siguientes componentes:
+          <ul>
+            <li> (20%) Presentación oral del proyecto
+            <li> (20%) Un artículo (4 a 6 páginas) en formato de conferencia
+            IEEE escrito en LaTex o MS Word or LaTeX pero presentado en formato
+            pdf. Puede estructurarse como introducción, metodología,
+            resultados, conclusiones, pero puede usarse otras secciones
+            adicionales (con nombre propio) en caso de ser necesario.
+            <li> (40%) La demostración del proyecto funcionando
+            <li> (10%) Uno o varios videos mostrando los resultados del
+            proyecto y ejemplos de funcionamiento adecuado.
+            <li> (10%) Funcionalidades adicionales.
+          </ul>
+        </p>
+
+        <h4> Fecha de presentación </h4>
+
+        El día viernes 30 de noviembre se debe entregar el artículo escrito
+        (por Canvas), y se debe realizar la presentación oral así como la demo.
         
       </div>
     </div>
