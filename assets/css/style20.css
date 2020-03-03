@@ -1,0 +1,118 @@
+@import url("font-awesome.min.css");
+
+body
+{
+    background-color:#FFFFFF;
+    color:#222222;
+}
+
+a {
+    color: #4682B4;
+    text-decoration:none;
+}
+
+a.bar:focus{
+    color: #006400;
+    text-decoration: underline;
+    background-color:azure;
+}
+a.bar:hover{
+    color: #006400;
+    text-decoration: underline;
+    background-color:azure;
+}
+
+a:focus, a:hover {
+    color: #006400;
+    text-decoration:none;
+}
+
+body,td,th {
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    line-height: 140%;
+    font-size: 16px
+}
+
+strong {
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    font-size: 15px
+}
+
+heading {
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700
+}
+
+ul {
+    margin-top: 0;
+}
+
+img#headshot {
+    width: 125px;
+    /*border: 1px solid #222222;*/
+}
+
+li {
+    color: black;
+}
+
+li span {
+    color: black;
+}
+
+hr {
+    border-color: #696969;
+}
+
+div.pub {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+pre.bib {
+    background-color:#eeeeee;
+    padding: 10px;
+    max-width: 650px;
+    overflow: auto;
+    line-height: normal;
+}
+
+.logo-header {
+    font-size: 150%;
+    font-family: gill sans, georgia, verdana, century gothic, georgia;
+    color: charcoal;
+    background: none;
+    font-weight: heavy;
+    text-align: left;
+    padding-left: 0;
+    /*  padding-top: 0;*/
+    /*  padding-bottom: 10;*/
+    text-shadow: 1px 1px 2px;
+}
+
+/* Icons */
+
+.icon {
+    text-decoration: none;
+}
+
+.icon:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon > .label {
+    display: none;
+}
